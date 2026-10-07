@@ -1,0 +1,82 @@
+@import '../../base/base';
+
+    
+.widget-t-sales-widget {
+
+  .media .icon {
+    background: #000;
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+  }
+
+  &.widget-m-sales .media .icon {
+    background: #f2eafa;
+    color: #805dca;
+  }
+
+  &.widget-m-orders .media .icon {
+    background: #eceffe;
+    color: #4361ee;
+  }
+
+  &.widget-m-customers .media .icon {
+    background: #fbeced;
+    color: #e7515a;
+  }
+
+  &.widget-m-income .media .icon {
+    background: #ddf5f0;
+    color: #00ab55;
+  }
+
+  .media {
+    .icon {
+      &.sales {}
+
+      svg {
+        width: 30px;
+        height: 30px;
+        stroke-width: 1.5;
+      }
+    }
+
+    .media-body {
+      align-self: center;
+      text-align: left;
+
+      .widget-text {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.widget-m-sales .media .media-body .widget-text {
+    color: #805dca;
+  }
+
+  &.widget-m-orders .media .media-body .widget-text {
+    color: #4361ee;
+  }
+
+  &.widget-m-customers .media .media-body .widget-text {
+    color: #e7515a;
+  }
+
+  &.widget-m-income .media .media-body .widget-text {
+    color: #00ab55;
+  }
+
+  .widget-numeric-value {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .widget-total-stats {
+    margin-bottom: 0;
+    margin-top: 12px;
+    font-size: 15px;
+  }
+}
